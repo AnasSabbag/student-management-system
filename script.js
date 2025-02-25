@@ -16,7 +16,7 @@ async function fetchJsonData() {
       // Log the JSON data to the console
       
   } catch (error) {
-      console.error('There was a problem with the fetch operation:', error);
+      console.log('There was a problem with the fetch operation:', error);
   }
 }
 // Call the function to fetch and read JSON data
