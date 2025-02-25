@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student management system</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <p>Student Portal</p>
+    </header>
+
+    <main>
+      <div id="search-div">
+        <input type="text" id="input-search" placeholder="Search" />
+        <button type="submit" id="btn-search" onclick="handleSearchQuery()">
+          Search
+        </button>
+      </div>
+
+      <div id="sort-buttons">
+        <div class="sort-btn">
+          <button type="submit" onclick="sortAtoZ()">Sort A->Z</button>
+        </div>
+        <div class="sort-btn">
+          <button type="submit" onclick="sortZtoA()">Sort Z->A</button>
+        </div>
+        <div class="sort-btn">
+          <button type="submit" onclick="sortByMarks()">Sort By Marks</button>
+        </div>
+        <div class="sort-btn">
+          <button type="submit" onclick="sortByPassing()">
+            Sort By Passing
+          </button>
+        </div>
+        <div class="sort-btn">
+          <button type="submit" onclick="sortByClass()">Sort By Class</button>
+        </div>
+        <div class="sort-btn">
+          <button type="submit" onclick="sortByGender()">Sort By Gender</button>
+        </div>
+      </div>
+
+      <table id="student-table">
+        <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Class</th>
+          <th>Marks</th>
+          <th>Passing</th>
+          <th>Email</th>
+        </thead>
+        <tbody id="student-body-data"></tbody>
+      </table>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
